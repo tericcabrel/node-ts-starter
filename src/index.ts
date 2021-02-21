@@ -1,11 +1,12 @@
-const addition = (a: number, b: number) => {
-  return a + b;
-};
+import express from 'express';
+import dotenv from 'dotenv';
 
-const number1 = 5;
-const number2 = 10;
-const result = addition(number1, number2);
+dotenv.config();
 
-console.log(`The application name is "${process.env.APP_NAME}"`);
+const PORT = parseInt(process.env.PORT || '4500');
 
-console.log('The result is %d', result);
+const app = express();
+
+app.listen(PORT, () => {
+  console.log(`Application started on port ${PORT} 🎉`);
+});
