@@ -11,8 +11,15 @@ This project contains a minimal starter for Node.js project with Typescript, ESL
 ```bash
 yarn install
 ```
+
+- Create application configuration
+```bash
+cp .env.example .env
+nano .env
+```
+
 - Start Application
 ```bash
 yarn start
 ```
-The application will be launched by [Nodemon](https://nodemon.com) so it's will restart automatically on file change
+The application will be launched by [Nodemon](https://nodemon.com). It will restart automatically on file change
