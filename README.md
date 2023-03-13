@@ -3,7 +3,7 @@
 This project contains a minimal starter for Node.js project with Typescript, ESLint and Prettier
 
 ## Prerequisites
-- Node.js 14+
+- Node.js 16+
 - Yarn or NPM
 
 ## Installation
