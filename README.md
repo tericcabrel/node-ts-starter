@@ -3,7 +3,7 @@
 This project contains a minimal starter for Node.js project with Typescript, ESLint and Prettier
 
 ## Prerequisites
-- Node.js 16+
+- Node.js 18+
 - Yarn or NPM
 
 ## Installation
@@ -11,8 +11,9 @@ This project contains a minimal starter for Node.js project with Typescript, ESL
 ```bash
 yarn install
 ```
+
 - Start Application
 ```bash
 yarn start
 ```
-The application will be launched by [Nodemon](https://nodemon.com) so it's will restart automatically on file change
+The application is launched by [Nodemon,](https://nodemon.com) which automatically restart the application on file change.
