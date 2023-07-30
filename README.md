@@ -16,4 +16,4 @@ yarn install
 ```bash
 yarn start
 ```
-The application will be launched by [Nodemon,](https://nodemon.com) so it will restart automatically on file change.
+The application is launched by [Nodemon,](https://nodemon.com) which automatically restart the application on file change.
