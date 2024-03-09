@@ -6,4 +6,6 @@ const number1 = 5;
 const number2 = 10;
 const result = addition(number1, number2);
 
+console.log(`The application name is "${process.env.APP_NAME}"`);
+
 console.log('The result is %d', result);
