@@ -1,24 +1,36 @@
 {
   "name": "node-typescript-starter",
   "version": "1.0.0",
-  "description": "Node project starter with Typescript, ESLint and Prettier",
+  "description": "Node project starter with TypeScript, ESLint and Prettier",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "build": "tsc -b",
     "start": "nodemon --watch \"*.ts\" --exec \"node -r ts-node/register --env-file=.env\" ./src/index.ts",
-    "eslint:fix": "eslint --fix"
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix",
+    "prepare": "husky"
   },
   "devDependencies": {
-    "@types/node": "20.11.25",
-    "@typescript-eslint/eslint-plugin": "7.1.1",
-    "@typescript-eslint/parser": "7.1.1",
+    "@types/node": "20.12.7",
+    "@typescript-eslint/eslint-plugin": "7.7.0",
+    "@typescript-eslint/parser": "7.7.0",
     "eslint": "8.57.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-prettier": "5.1.3",
     "eslint-plugin-sort-destructure-keys": "1.5.0",
+    "husky": "^9.0.11",
+    "lint-staged": "15.2.2",
     "nodemon": "3.1.0",
     "prettier": "3.2.5",
     "ts-node": "10.9.2",
-    "typescript": "5.4.2"
-  }
+    "typescript": "5.4.5"
+  },
+  "lint-staged": {
+    "**/*.ts?(x)": [
+      "eslint src --fix",
+      "prettier --write"
+    ]
+  },
+  "packageManager": "yarn@1.22.22"
 }

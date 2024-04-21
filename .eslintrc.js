@@ -6,7 +6,7 @@ module.exports = {
   ],
   plugins: ['sort-destructure-keys'],
   parserOptions: {
-    ecmaVersion: 2022, // Allows for the parsing of modern ECMAScript features
+    ecmaVersion: 'latest', // Allows for the parsing of modern ECMAScript features
     sourceType: 'module', // Allows for the use of imports
     project: 'tsconfig.json'
   },
@@ -25,7 +25,7 @@ module.exports = {
     'no-use-before-define': 'error',
     'max-len': ['error', 150],
     '@typescript-eslint/ban-ts-comment': 'off',
-    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-explicit-any': 'error',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     'sort-destructure-keys/sort-destructure-keys': 2,
     '@typescript-eslint/member-ordering': 'error',
