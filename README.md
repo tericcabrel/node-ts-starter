@@ -1,6 +1,6 @@
 # Node Typescript Starter
 
-This project contains a minimal starter for Node.js project with TypeScript, ESLint and Prettier
+This project contains a minimal starter for Node.js project with TypeScript and Biome
 
 ## Prerequisites
 - Node.js 20.6.0 or higher

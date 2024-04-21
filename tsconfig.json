@@ -1,21 +1,16 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "ESNext",
     "module": "commonjs",
-    "lib": ["dom"],
     "outDir": "./build",
     "strict": true,
-    "noImplicitAny": false,
-    "strictPropertyInitialization": false,
+    "noImplicitAny": true,
+    "strictPropertyInitialization": true,
     "baseUrl": "./",
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true
   },
-  "include": [
-    "./src/**/*",
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules"]
 }
