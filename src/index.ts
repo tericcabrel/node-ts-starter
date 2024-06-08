@@ -1,7 +1,4 @@
 import express from 'express';
-import dotenv from 'dotenv';
-
-dotenv.config();
 
 const HOST = process.env.HOST || 'http://localhost';
 const PORT = parseInt(process.env.PORT || '4500');

@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
+    "target": "esnext",
+    "module": "commonjs",
     "lib": ["dom"],
     "outDir": "./build",
     "strict": true,
@@ -15,6 +15,7 @@
     "./src/**/*"
   ],
   "exclude": [
+    "build",
     "node_modules"
   ]
 }
